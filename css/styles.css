@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+section,
+header {
+  background: linear-gradient(0deg, #cfd8d8, #cfd8d8), #cfd8d8;
+  background-blend-mode: multiply, normal;
+  /*  padding: 120px; */
+}
+
+
+footer {
+  background: linear-gradient(
+      0deg,
+      rgba(17, 32, 38, 0.24),
+      rgba(17, 32, 38, 0.24)
+    ),
+    linear-gradient(0deg, #cfd8d8, #cfd8d8), #cfd8d8;
+}
+
+@media (min-width: 1280px) {
+    .topic-container:hover .sub-topic {
+      display: flex;
+    }
+  }
