@@ -23,4 +23,8 @@ footer {
     .topic-container:hover .sub-topic {
       display: flex;
     }
+
+    .slider-img{
+      min-width: 50% !important;
+    }
   }

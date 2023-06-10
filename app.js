@@ -1,27 +1,28 @@
 //DYNAMIC COPYRIGHT YEAR
-document.getElementById('year').innerText = new Date().getFullYear();
+document.getElementById("year").innerText = new Date().getFullYear();
 
-var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  };
+const hover = (el) => {
+    el.classList.toggle("slider-img")
+  //Get the current image src and convert to the large format
+  //let large_img_source = el.firstElementChild.src.replace(/.png/, "-large.png");
+  //el.firstElementChild.src = large_img_source;
+  //Check if the element is currently hovered
+   //if (el.classList.toggle("slider-img")) {
+    //If TRUE, change the image to a large one
+    //el.firstElementChild.src = large_img_source;
+  ///} 
+};
 
+const unhover = (el) => {
 
-  $(document).ready(() => {
-    $('#slideshow .slick').slick({
-        autoplay: true,
-        autoplaySpeed: 500, // autoplaySpeed: 1000, or             autoplaySpeed: 2000,
-        dots: true,
-    });
-});
+    console.log("I am out oooooo")
+  //Get the current image src and convert to the large format
+  // let small_img_source = el.firstElementChild.src.replace(/-large.png/, ".png"); 
+  // el.firstElementChild.src = small_img_source;
+  //Check if the element is currently hovered
+ /*  if (!el.classList.contains("slider-main-image")) {
+    //If TRUE, change the image to a large one
+    el.firstElementChild.src = small_img_source;
+  } */
+};
 
-$(document).ready(() => {
-    $('#userReview .slick').slick({
-        autoplay: true,
-        autoplaySpeed: 8000,
-        dots: true,
-    });
-});
